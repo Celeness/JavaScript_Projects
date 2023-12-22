@@ -1,0 +1,83 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --black: #191919;
+  --blue: #b9cebb;
+  --pink1: rgba(242, 111, 125, 0.5);
+  --pink2:rgba(242, 111, 125, 0.7);
+  --blue2:rgba(71, 144, 150, 0.7);
+}
+body{
+    background-image: url(/Digital_Clock/bcg_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.container{
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 100vh;
+}
+h1{
+  color:var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  letter-spacing: 4px;
+  margin: 0.5rem;
+}
+.parameters{
+  display: flex;
+  position: relative;
+}
+.block{
+  height: 12rem;
+  width: 12rem;
+  margin: 0.5rem;
+  position: relative;
+  background: var(--pink1);
+}
+.block h2{
+  color:var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.number{
+  width: 6rem;
+  height: auto;
+  font-size: 80px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 2.5rem;
+  top:0.5rem
+}
+h3{
+  color: var(--blue);
+}
+.parameter{
+  height: 3rem;  
+  width: 12rem;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 9px;
+  background: var(--pink2);
+}
+.am_pm{
+  position: absolute;
+  right: -100px;
+  bottom: 8px;
+  height:3rem;
+  width: 6rem;
+  padding-top: 6px;
+  background-color:var(--blue2);
+}
+.am_pm h2{
+  font-size: 24x;
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+}
