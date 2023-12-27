@@ -81,3 +81,113 @@ h3{
   color: var(--black);
   font-family: 'Poppins', sans-serif;
 }
+/* 
+ Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+  */
+  @media (max-width: 576px) {
+    body{
+      height: 100svh;
+    }
+    h1{
+      font-size: 25px;
+      letter-spacing: 3px;
+      margin: 0.3rem;
+    }
+    .parameters{
+      flex-direction: column;
+      align-items: center;
+    }
+    .am_pm{
+      right:-50px;
+      padding-top: 3px;
+      height:2rem;
+      width: 4rem;
+      background: rgba(71, 144, 150, 0.9) ;
+    }
+    .am_pm h2{
+      font-size: 16px;
+    }
+    .block{
+      height: 8rem;
+      width: 8rem;
+      margin: 0.5rem;
+      background: rgba(242, 111, 125, 0.7);
+    }
+    .block h2{
+      color:var(--black);
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    .parameter{
+      height: 2rem;  
+      width: 8rem;
+      padding-top: 6px;
+      background: rgba(242, 111, 125, 0.9);
+    }
+    .number{
+      width: 8rem;
+      height: auto;
+      font-size: 50px;
+      left: 0.1rem;
+      top:0.5rem
+    }
+    h3{
+      color: #fafafa;
+      opacity: 0.8;
+    }
+    
+  }
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width:768px) {
+    body{
+      height: 100svh;
+    }
+    h1{
+      font-size: 30px;
+      letter-spacing: 3px;
+      margin: 0.8rem;
+    }
+    .parameters{
+      flex-direction: column;
+      align-items: center;
+    }
+    .am_pm{
+      right:-60px;
+      padding-top: 2px;
+      height:2.5rem;
+      width: 5rem;
+      background: rgba(71, 144, 150, 0.9) ;
+    }
+    .am_pm h2{
+      font-size: 25px;
+    }
+    .block{
+      height: 10rem;
+      width: 10rem;
+      margin: 0.5rem;
+      background: rgba(242, 111, 125, 0.7);
+    }
+    .block h2{
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    .parameter{
+      height: 2.5rem;  
+      width: 10rem;
+      padding-top: 5px;
+      background: rgba(242, 111, 125, 0.9);
+    }
+    .number{
+      width: 8rem;
+      height: auto;
+      font-size: 70px;
+      left: 1rem;
+      top:0.3rem
+    }
+    h3{
+      color: #fafafa;
+      opacity: 0.8;
+    }
+  }
