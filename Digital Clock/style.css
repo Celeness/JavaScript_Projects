@@ -54,7 +54,8 @@ h1{
   letter-spacing: 2px;
   position: absolute;
   left: 2.5rem;
-  top:0.5rem
+  top:0.5rem;
+  caret-color: transparent;
 }
 h3{
   color: var(--blue);
