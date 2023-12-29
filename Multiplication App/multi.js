@@ -9,8 +9,8 @@ let count = 0
 qreateQuestion()
 function qreateQuestion() {
   // At first I created 2 random number
-  randomNumber1 = Math.floor(Math.random() * 10) + 1
-  randomNumber2 = Math.floor(Math.random() * 30) + 1
+  randomNumber1 = Math.floor(Math.random() * 9) + 2
+  randomNumber2 = Math.floor(Math.random() * 29) + 2
 
   // Assigned random numbers in question
   let question = document.querySelector('h1')
@@ -25,10 +25,9 @@ $('.btn').click(function () {
   // Get value of user Answer
   let userAnswer = $('.input').val()
   let rightAnswer = (randomNumber1 * randomNumber2).toString()
-  console.log(userAnswer)
   if (userAnswer === rightAnswer) {
     document.querySelector('body').classList.add('animationGreen')
-    setInterval(() => {
+    setTimeout(() => {
       document.querySelector('body').classList.remove('animationGreen')
     }, 500)
     $('.input').val('')
@@ -37,7 +36,7 @@ $('.btn').click(function () {
     score.innerHTML = 'Score: ' + count
   } else if (userAnswer !== rightAnswer) {
     document.querySelector('body').classList.add('animationRed')
-    setInterval(() => {
+    setTimeout(() => {
       document.querySelector('body').classList.remove('animationRed')
     }, 500)
     $('.input').val('')
@@ -54,7 +53,7 @@ $('.input').keydown(function (event) {
   if (key === 'Enter') {
     if (userAnswer === rightAnswer) {
       document.querySelector('body').classList.add('animationGreen')
-      setInterval(() => {
+      setTimeout(() => {
         document.querySelector('body').classList.remove('animationGreen')
       }, 500)
       $('.input').val('')
@@ -63,7 +62,7 @@ $('.input').keydown(function (event) {
       score.innerHTML = 'Score: ' + count
     } else if (userAnswer !== rightAnswer) {
       document.querySelector('body').classList.add('animationRed')
-      setInterval(() => {
+      setTimeout(() => {
         document.querySelector('body').classList.remove('animationRed')
       }, 500)
       $('.input').val('')
