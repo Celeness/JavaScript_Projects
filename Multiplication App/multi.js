@@ -1,35 +1,65 @@
-// User can only type number
-function isNumberKey(event) {
-  var charCode = event.which ? event.which : event.keyCode
-  if (charCode > 31 && (charCode < 48 || charCode > 57)) return false
-  return true
+$(document).ready(function () {
+  $('.input').focus()
+})
+
+let randomNumber1
+let randomNumber2
+let count = 0
+
+qreateQuestion()
+function qreateQuestion() {
+  // At first I created 2 random number
+  randomNumber1 = Math.floor(Math.random() * 10) + 1
+  randomNumber2 = Math.floor(Math.random() * 30) + 1
+
+  // Assigned random numbers in question
+  let question = document.querySelector('h1')
+  question.innerHTML = 'What is ' + randomNumber1 + ' multiply by ' + randomNumber2 + ' ?'
 }
-
-// At first I created 2 random number
-let randomNumber1 = Math.floor(Math.random() * 10) + 1
-let randomNumber2 = Math.floor(Math.random() * 30) + 1
-
-// Assigned random numbers in question
-let question = document.querySelector('h1')
-question.innerHTML = 'What is ' + randomNumber1 + ' multiply by ' + randomNumber2 + ' ?'
-
-// Right Answer
-let rightAnswer = randomNumber1 * randomNumber2
-console.log(rightAnswer)
-// Right answer to convert string
-let convertRightAnswer = rightAnswer.toString()
 
 // Get score
 let score = document.querySelector('h3')
-let count = 0
+
+// Run the code if user clicks the submit button
 $('.btn').click(function () {
   // Get value of user Answer
   let userAnswer = $('.input').val()
+  let rightAnswer = (randomNumber1 * randomNumber2).toString()
   console.log(userAnswer)
-  console.log(typeof userAnswer)
-  if (userAnswer === convertRightAnswer) {
-    score.innerHTML = 'Score: ' + count
+  if (userAnswer === rightAnswer) {
+    $('.input').val('')
+    qreateQuestion()
     count++
-    question.innerHTML = 'What is ' + randomNuber1 + ' multiply by ' + randomNumber2 + ' ?'
+    score.innerHTML = 'Score: ' + count
+  } else if (userAnswer !== rightAnswer) {
+    $('.input').val('')
+    qreateQuestion()
+    count--
+    score.innerHTML = 'Score: ' + count
   }
 })
+// Run the code if user press the enter key
+$('.input').keydown(function (event) {
+  let key = event.key
+  let userAnswer = $('.input').val()
+  let rightAnswer = (randomNumber1 * randomNumber2).toString()
+  if (key === 'Enter') {
+    if (userAnswer === rightAnswer) {
+      $('.input').val('')
+      qreateQuestion()
+      count++
+      score.innerHTML = 'Score: ' + count
+    } else if (userAnswer !== rightAnswer) {
+      $('.input').val('')
+      qreateQuestion()
+      count--
+      score.innerHTML = 'Score: ' + count
+    }
+  }
+})
+// Allowing that user can only type number
+function isNumberKey(event) {
+  let charCode = event.which ? event.which : event.keyCode
+  if (charCode > 31 && (charCode < 48 || charCode > 57)) return false
+  return true
+}
