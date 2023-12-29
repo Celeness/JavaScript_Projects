@@ -27,11 +27,19 @@ $('.btn').click(function () {
   let rightAnswer = (randomNumber1 * randomNumber2).toString()
   console.log(userAnswer)
   if (userAnswer === rightAnswer) {
+    document.querySelector('body').classList.add('animationGreen')
+    setInterval(() => {
+      document.querySelector('body').classList.remove('animationGreen')
+    }, 500)
     $('.input').val('')
     qreateQuestion()
     count++
     score.innerHTML = 'Score: ' + count
   } else if (userAnswer !== rightAnswer) {
+    document.querySelector('body').classList.add('animationRed')
+    setInterval(() => {
+      document.querySelector('body').classList.remove('animationRed')
+    }, 500)
     $('.input').val('')
     qreateQuestion()
     count--
@@ -45,11 +53,19 @@ $('.input').keydown(function (event) {
   let rightAnswer = (randomNumber1 * randomNumber2).toString()
   if (key === 'Enter') {
     if (userAnswer === rightAnswer) {
+      document.querySelector('body').classList.add('animationGreen')
+      setInterval(() => {
+        document.querySelector('body').classList.remove('animationGreen')
+      }, 500)
       $('.input').val('')
       qreateQuestion()
       count++
       score.innerHTML = 'Score: ' + count
     } else if (userAnswer !== rightAnswer) {
+      document.querySelector('body').classList.add('animationRed')
+      setInterval(() => {
+        document.querySelector('body').classList.remove('animationRed')
+      }, 500)
       $('.input').val('')
       qreateQuestion()
       count--
