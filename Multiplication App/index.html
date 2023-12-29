@@ -15,14 +15,15 @@
 
 <body>
   <div class="container">
-    <h3 class="score">Score: 1</h3>
-    <h1 class="question">What is 2 multiply by 3 ?</h1>
-    <input class="input" type="text" placeholder="Enter Your Answer" autocomplete="off">
+    <h3 class="score">Score: 0</h3>
+    <h1 class="question"></h1>
+    <input class="input" type="text" onkeypress="return isNumberKey(event)" placeholder="Enter Your Answer"
+      autocomplete="off">
     <button class="btn" type="submit">Submit</button>
   </div>
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="multi.js" charset="UTF-8"></script>
 </body>
 
