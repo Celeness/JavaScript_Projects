@@ -78,3 +78,9 @@ input:focus{
 .btn:hover{
   filter: brightness(0.9);
 }
+.animationGreen{
+  background-color: green;
+}
+.animationRed{
+  background-color: red;
+}
