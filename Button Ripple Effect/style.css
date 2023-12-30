@@ -22,15 +22,17 @@ body{
   content: "";
   position: absolute;
   background-color: orangered;
-  /* top:50%;
-  left: 50%; */
+  width: 0;
+  height: 0;
+  left:var(--xPos);
+  top:var(--yPos);
   transform: translate(-50%,-50%);
   border-radius: 50%;
   transition: width 0.5s, height 05s;
 }
 .btn:hover::before{
-  width:700px;
-  height: 700px;
+  width:400px;
+  height: 400px;
 }
 span{
   color: black;
