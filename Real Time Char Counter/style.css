@@ -34,7 +34,7 @@ body{
   color:#2D3250;
   text-indent: 10px;
   font-family: 'Quicksand', sans-serif;
-  font-size: 15px;
+  font-size: clamp(0.8rem,2.2vw, 1.7rem);
 }
 .input:focus{
   outline: none;
