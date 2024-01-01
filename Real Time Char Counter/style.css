@@ -1,0 +1,38 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body{
+  background-color:salmon;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.container{
+  background-color: pink;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0, .4);
+}
+.theText{
+  margin-bottom: 1.5rem;
+  font-family:sans-serif, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+.input{
+  display: block;
+  width:100%;
+  margin-bottom: 1rem;
+  padding-bottom: 6rem ;
+}
+.totalCharacter_Remaining{
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+
+}
+
+
