@@ -1,4 +1,4 @@
-$('.input').keypress(function () {
+$('.input').keydown(function () {
   let userText = $('.input').val()
   let a = userText.length
   $('.character span').text(a)
