@@ -19,12 +19,12 @@ body{
 .theText{
   margin-bottom: 1.5rem;
   font-family: 'Quicksand', sans-serif;
-  font-size: 25px;
+  font-size: clamp(1rem,2.5vw, 2rem);
   color: #092635;
 }
 .input{
   display: block;
-  width:100%;
+  min-width:100%;
   height:120px;
   text-align:justify;
   margin-bottom: 1rem;
@@ -43,7 +43,7 @@ body{
   display: flex;
   justify-content: space-between;
   font-family: 'Quicksand', sans-serif;
-  font-size: 15px;
+  font-size: clamp(0.7rem,2vw, 1.5rem);
   color: #092635;
 }
 .character span{
