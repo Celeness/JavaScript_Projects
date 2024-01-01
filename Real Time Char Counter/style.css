@@ -4,13 +4,13 @@ padding: 0;
 margin: 0;
 }
 body{
-  background-color:salmon;
+  background-color:#525CEB;
   display: grid;
   place-content: center;
   height: 100vh;
 }
 .container{
-  background-color: pink;
+  background-color:#3D3B40;
   padding: 2rem;
   text-align: center;
   border-radius: 8px;
@@ -18,20 +18,23 @@ body{
 }
 .theText{
   margin-bottom: 1.5rem;
-  font-family:sans-serif, Geneva, Tahoma, sans-serif;
-  font-size: 24px;
+  font-family: 'Quicksand', sans-serif;;
+  font-size: 25px;
+  color: aliceblue;
 }
 .input{
   display: block;
   width:100%;
   margin-bottom: 1rem;
   padding-bottom: 6rem ;
+  background-color: aliceblue;
 }
 .totalCharacter_Remaining{
   display: flex;
   justify-content: space-between;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  color: aliceblue;
 
 }
 
