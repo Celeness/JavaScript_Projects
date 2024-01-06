@@ -16,7 +16,8 @@
 <body>
   <div class="container">
     <h1 class="theText">Real-time Character Counter</h1>
-    <textarea class="input" placeholder="Please write your text here..." maxlength="50"></textarea>
+    <textarea class="input" placeholder="Please write your text here..." maxlength="50"
+      oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></textarea>
     <div class="totalCharacter_Remaining">
       <p class="total character">Total Character: <span>0</span></p>
       <p class="total remaining">Remaining: <span> 50</span></p>
