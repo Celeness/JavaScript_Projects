@@ -12,6 +12,7 @@ box-sizing: border-box;
   z-index: 1;
   padding: 10px;
   box-shadow: 0px 4px 8px rgba(0,0,0, .3);
+  transition: background-color 0.4s;
 }
 .logo > img{
   max-width: 85px;
