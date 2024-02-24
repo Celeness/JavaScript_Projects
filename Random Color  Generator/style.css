@@ -10,20 +10,22 @@ h1{
   font-size: clamp(1.3rem, 3vw, 3.3rem);
 }
 .container{
-  margin: 10px;
-  gap:15px;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: 23% 23% 23% 23%;
-  grid-template-rows: 20dvh 20dvh ;
 }
 .color-container{
+  width: 500px;
+  height: 250px;
+  margin: 10px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   font-family: cursive;
   font-weight: 900;
-  font-size:clamp(1.1rem, 2vw, 3rem) ;
+  font-size:clamp(1.1rem, 2vw, 2rem);
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
 }
