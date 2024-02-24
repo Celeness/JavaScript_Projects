@@ -25,7 +25,6 @@ h1{
   border: 3px solid black;
   border-radius: 10px;
   font-family: cursive;
-  font-weight: 900;
   font-size:clamp(1.1rem, 2vw, 2rem);
   text-shadow: 2px 2px 4px rgba(0,0,0,.5);
 }
