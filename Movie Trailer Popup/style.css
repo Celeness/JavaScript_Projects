@@ -1,0 +1,29 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body{
+
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  margin:50px;
+  border: 2px solid black ;
+  align-items: center;
+  width: 50%;
+  max-height:  100vh;
+}
+.video{
+  height: max-content;
+  
+}
+.title{
+
+}
+p{
+  
+}
